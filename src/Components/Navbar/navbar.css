@@ -1,0 +1,97 @@
+.page .navbar-1-page {
+    background: #09090b;
+    color: #faf9f5;
+    font-family: "Euclid Circular A", "Poppins";
+    padding-top: 72px;
+    margin: 0;
+}
+
+.navbar-1 {
+    position: fixed;
+    z-index: 100; /* Ensure navbar stays above all content */
+    top: 0;
+    left: 0;
+    translate: 0 -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #4f52ff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-1.visible {
+    translate: 0 0;
+}
+
+.navbar-1 > h1 {
+    width: 36px;
+    height: 36px;
+    background: #f9f9f9;
+    color: #4f52ff;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.navbar-1 .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-1 .nav-items > a {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.96);
+    height: 72px;
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
+}
+
+.navbar-1 .nav-items > a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.page.navbar-1-page h2 {
+    font-size: 20px;
+    margin: 0 0 4px;
+    cursor: default;
+}
+
+.page.navbar-1-page section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.page.navbar-1-page p {
+    opacity: 0.6;
+}
+
+.page.navbar-1-page section.shaded {
+    background: #212141;
+}
+
+.page.navbar-1-page section > img {
+    width: 200px;
+    height: 200px;
+}
+
+.page.navbar-1-page section.shaded > img {
+    padding: 20px;
+}
+
+.page.navbar-1-page section > p {
+    line-height: 1.7;
+}
