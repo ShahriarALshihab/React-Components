@@ -8,6 +8,7 @@ import image4 from "./svgs/4.svg";
 import image5 from "./svgs/5.svg";
 import image6 from "./svgs/6.svg";
 import "./navbar.css";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -38,7 +39,8 @@ const Navbar = () => {
         <div className="nav-items">
           <a href="#">About</a>
           <a href="#">Services</a>
-          <a href="#">Products</a>
+          <Link to='/carousel'>Products</Link>
+         
           <a href="#">Contact</a>
         </div>
       </nav>
